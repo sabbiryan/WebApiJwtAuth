@@ -1,0 +1,14 @@
+http require headers:
+
+Content-Type: application/json
+Accept: application/json
+
+
+{
+   "Email": "user@user.com",
+   "Username": "user",
+   "Password": "User@Passrows1",
+   "ConfirmPassword": "User@Passrows1",
+   "FirstName": "Mr.",
+   "LastName": "User",
+}
