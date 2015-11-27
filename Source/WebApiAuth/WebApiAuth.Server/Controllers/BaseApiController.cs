@@ -65,5 +65,10 @@ namespace WebApiAuth.Server.Controllers
 
             return null;
         }
+
+
+        private readonly ApplicationRoleManager _appRoleManager = null;
+
+        protected ApplicationRoleManager AppRoleManager => _appRoleManager ?? Request.GetOwinContext().GetUserManager<ApplicationRoleManager>();
     }
 }

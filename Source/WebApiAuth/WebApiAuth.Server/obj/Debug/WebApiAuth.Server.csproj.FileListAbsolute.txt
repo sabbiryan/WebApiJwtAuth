@@ -118,3 +118,5 @@ D:\Professions\Secure Bit Link\Data\Github\WebApi-Auth\Source\WebApiAuth\WebApiA
 D:\Professions\Secure Bit Link\Data\Github\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server\bin\System.IdentityModel.Tokens.Jwt.pdb
 D:\Professions\Secure Bit Link\Data\Github\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server\bin\System.IdentityModel.Tokens.Jwt.xml
 D:\Professions\Secure Bit Link\Data\Github\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server\bin\Thinktecture.IdentityModel.Core.pdb
+D:\Professions\Secure Bit Link\Data\Github\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server\bin\Microsoft.Owin.Security.Jwt.dll
+D:\Professions\Secure Bit Link\Data\Github\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server\bin\Microsoft.Owin.Security.Jwt.xml

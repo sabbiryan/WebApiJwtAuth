@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Web;
 using System.Web.Http.Routing;
+using Microsoft.AspNet.Identity.EntityFramework;
 using WebApiAuth.Server.Infrastructure;
 
 namespace WebApiAuth.Server.Models
@@ -31,6 +32,17 @@ namespace WebApiAuth.Server.Models
                 JoinDate = appUser.JoinDate,
                 Roles = _appUserManager.GetRolesAsync(appUser.Id).Result,
                 Claims = _appUserManager.GetClaimsAsync(appUser.Id).Result
+            };
+        }
+
+        public RoleReturnModel Create(IdentityRole appRole)
+        {
+
+            return new RoleReturnModel
+            {
+                Url = _urlHelper.Link("GetRoleById", new { id = appRole.Id }),
+                Id = appRole.Id,
+                Name = appRole.Name
             };
         }
     }

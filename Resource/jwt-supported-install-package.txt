@@ -1,2 +1,5 @@
 Install-package System.IdentityModel.Tokens.Jwt
 Install-package Thinktecture.IdentityModel.Core
+
+
+Install-Package Microsoft.Owin.Security.Jwt
