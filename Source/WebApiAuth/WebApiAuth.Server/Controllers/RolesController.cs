@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Routing;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using WebApiAuth.Server.Models;
@@ -15,6 +16,13 @@ namespace WebApiAuth.Server.Controllers
     [RoutePrefix("api/roles")]
     public class RolesController : BaseApiController
     {
+        [Route("", Name = "GetAllRoles")]
+        public IHttpActionResult GetAllRoles()
+        {
+            var roles = this.AppRoleManager.Roles;
+
+            return Ok(roles);
+        }
 
         [Route("{id:guid}", Name = "GetRoleById")]
         public async Task<IHttpActionResult> GetRole(string Id)
@@ -30,12 +38,16 @@ namespace WebApiAuth.Server.Controllers
 
         }
 
-        [Route("", Name = "GetAllRoles")]
-        public IHttpActionResult GetAllRoles()
+        [Authorize(Roles = "SuperAdmin, Admin")]
+        [Route("role/{roleName}", Name = "GetRoleByName")]
+        public IHttpActionResult GetByName(string roleName)
         {
-            var roles = this.AppRoleManager.Roles;
-
-            return Ok(roles);
+            var role =  AppRoleManager.FindByName(roleName);
+            if (role != null)
+            {
+                return Ok(TheModelFactory.Create(role));
+            }
+            return NotFound();
         }
 
         [Route("create")]
@@ -122,7 +134,7 @@ namespace WebApiAuth.Server.Controllers
 
                 if (appUser == null)
                 {
-                    ModelState.AddModelError("", String.Format("User: {0} does not exists", user));
+                    ModelState.AddModelError("", $"User: {user} does not exists");
                     continue;
                 }
 
@@ -130,7 +142,7 @@ namespace WebApiAuth.Server.Controllers
 
                 if (!result.Succeeded)
                 {
-                    ModelState.AddModelError("", String.Format("User: {0} could not be removed from role", user));
+                    ModelState.AddModelError("", $"User: {user} could not be removed from role");
                 }
             }
 
