@@ -4,3 +4,9 @@ D:\Professions\Secure Bit Link\Data\Github\WebApiAuth\WebApiAuth.Server.Tests\bi
 D:\Professions\Secure Bit Link\Data\Github\WebApiAuth\WebApiAuth.Server.Tests\obj\Debug\WebApiAuth.Server.Tests.csprojResolveAssemblyReference.cache
 D:\Professions\Secure Bit Link\Data\Github\WebApiAuth\WebApiAuth.Server.Tests\obj\Debug\WebApiAuth.Server.Tests.dll
 D:\Professions\Secure Bit Link\Data\Github\WebApiAuth\WebApiAuth.Server.Tests\obj\Debug\WebApiAuth.Server.Tests.pdb
+D:\Professions\Secure Bit Link\Data\Bitbucket\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server.Tests\bin\Debug\WebApiAuth.Server.Tests.dll
+D:\Professions\Secure Bit Link\Data\Bitbucket\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server.Tests\bin\Debug\WebApiAuth.Server.Tests.pdb
+D:\Professions\Secure Bit Link\Data\Bitbucket\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Professions\Secure Bit Link\Data\Bitbucket\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server.Tests\obj\Debug\WebApiAuth.Server.Tests.csprojResolveAssemblyReference.cache
+D:\Professions\Secure Bit Link\Data\Bitbucket\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server.Tests\obj\Debug\WebApiAuth.Server.Tests.dll
+D:\Professions\Secure Bit Link\Data\Bitbucket\WebApi-Auth\Source\WebApiAuth\WebApiAuth.Server.Tests\obj\Debug\WebApiAuth.Server.Tests.pdb
